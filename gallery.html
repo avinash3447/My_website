@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My_gallery</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript">
+	function changeDes(id){
+		document.getElementById("imgholder").src=id.src;
+	var url = id.src;
+	var str= document.getElementById("description");
+	var filename = url.substring(url.lastIndexOf("/") + 1, url.lastIndexOf("."));
+	switch(filename.toLowerCase()){
+		case "thesis": str.innerHTML="fig 1 description";
+					   break;
+		case "cloudconnector": str.innerHTML="fig 2 description";
+							   break;	
+		case "database": str.innerHTML="fig 3 description";
+		                 break;	
+		case "diffscn": str.innerHTML="fig 4 description";
+		                break;	
+		case "diffscne": str.innerHTML="fig 5 description";
+		                 break;			   
+	}
+
+	}
+	</script>
+
+</head>
+<body style="background: white;
+	color: black;
+	text-align: center;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;">
+
+									  <!-- Top Menu-->
+<nav>
+        <ul>
+
+            <li><a href="profiles.html">Profiles</a></li>
+            <li><a href="#">Contact</a></li>
+            <li style="border-bottom-style: solid;color: blue; border-bottom-color: blue;"><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+</nav>
+
+<div class="gallery" align="center">
+<h3>Master Thesis Gallery</h3>
+
+<div class="thumbnails">
+	<a href="#"><img src="image\thesis.jpg" alt="Main thesis" onclick="changeDes(this)" /></a>
+	<a href="#"><img src="image\cloudconnector.jpg" alt="HCP cloud connector" onclick="changeDes(this)" /></a>
+	<a href="#"><img src="image\database.jpg" alt="database linkage" onclick="changeDes(this)" /></a>
+	<a href="#"><img src="image\diffscn.jpg" alt="different scnerio" onclick="changeDes(this)" /></a>
+	<a href="#"><img src="image\diffscne.jpg" alt="different scnerio" onclick="changeDes(this)" /></a>
+</div>
+<!--
+<iframe id="iframe1" src="..\image\thesis.jpg" name="myframe" frameborder="0" style="position:absolute;height: 60%;width: 60%;"></iframe>-->
+<div id="section" align="center"><img id="imgholder" src="image\thesis.jpg" height="400px" width="600px"/></div>
+<div id="description">This is the image that gives you the overview of the thesis</div>
+<div class="footer">Copyright &copy; 2016 Avinash Lakshmipathi</div>
+</body>
+</html>

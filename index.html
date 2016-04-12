@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>My website</title>
+	<base target="_top" href=""></base>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+
+
+	<script type="text/javascript">
+	function changecolor(){
+		document.getElementById("sbtn").style.color = "blue";
+	}
+	function samecolor(){
+	 	document.getElementById("sbtn").style.color = "black";
+	}
+	
+	</script>
+</head>
+
+<body>
+                <!-- Top Menu-->
+<nav>
+        <ul>
+
+            <li><a href="profiles.html">Profiles</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li style="border-bottom-style: solid;color: blue; border-bottom-color: blue;"><a href="index.html">Home</a></li>
+        </ul>
+</nav>
+ 
+                         <!-- Button for social profiles-->
+<div id="profiles">
+
+	<a href="profiles.html"><input id="sbtn" onmouseover="changecolor()" onmouseout="samecolor()" type="submit" value="Checkout my Profiles"><br/></a>
+	
+	
+</div>
+                                                <!-- About me -->
+<div id="intro" >
+<p id="myName">Avinash Lakshmipathi</p>
+<p  id="introToMe" align="center">
+	Hallo, guten tag.Welcome to my profile! I am Avinash Lakshmipathi. I'm from Bangalore, India but currently living in Heidelberg, Germany. I have successfully completed my Masters degree in &ldquo;Applied computer Science&rdquo; from SRH Hochschule Heidelberg. This website gives you an overview of my professional life and achivements, also I am currently looking for a full time position in frontend development.
+</p> 
+</div>
+<div class="footer">Copyright &copy; 2016 Avinash Lakshmipathi</div>
+</body>
+</html>
